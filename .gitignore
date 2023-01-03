@@ -1,0 +1,5 @@
+.python-version
+airflow*
+webserver_config.py
+logs
+__pycache__
