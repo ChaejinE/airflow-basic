@@ -1,6 +1,6 @@
 #!/bin/bash
 
-pip install -r requirements.txt
+pip install -r requirements.txt --use-pep517
 export AIRFLOW_HOME=.
 
 airflow db init
@@ -13,5 +13,5 @@ airflow users create \
 --role Admin \
 --email joung6517@gmail.com
 
-airflow webserver --port 8080
-airflow scheduler
+# airflow webserver --port 8080
+# airflow scheduler
