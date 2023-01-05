@@ -26,7 +26,7 @@ with DAG(
     dag_id="06_custom_operator",
     description="CustomOperator를 사용하는 DAG 예제입니다.",
     default_args={
-        "owner": "heumsi",
+        "owner": "luke",
         "retries": 0,
     },
     start_date=datetime(2022, 1, 20, tzinfo=Timezone("Asia/Seoul")),
@@ -36,6 +36,6 @@ with DAG(
 
     task = PrintSQLOperator(
         task_id="print_sql",
-        name=" {{ task_instance.task_id }}",
+        name="{{ task_instance.task_id }}",
         sql="06_custom_operator.sql",
     )

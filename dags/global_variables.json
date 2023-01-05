@@ -1,0 +1,7 @@
+{
+    "hello": "wolrd",
+    "json_data": {
+        "welcome": "airflow",
+        "author": "luke"
+    }
+}
